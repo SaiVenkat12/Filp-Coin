@@ -15,5 +15,15 @@ else
 fi
 done
 
-echo "heads $h times";
- echo "tails $t times"
+echo "heads $h"
+echo "tails $t"
+
+if [ $h -gt $t ]
+then
+	echo "Heads won by $h"
+elif [ $h -lt $t ]
+then
+	echo "Tails won by $t"
+else
+	echo "It is a Tie"
+fi
